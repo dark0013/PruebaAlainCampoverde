@@ -11,7 +11,7 @@ use Carbon\Carbon;
 
 class MarcacionController extends Controller
 {
-    public function index(Request $request)
+    public function fnMarcacion(Request $request)
     {
          // Validar la solicitud
     $validated = $request->validate([
@@ -64,6 +64,12 @@ class MarcacionController extends Controller
         $resultado = "ALMUERZO";
     } else {
         
+
+
+        $marcacion = Marcacion::create([  
+            'identificacion' => $validated['identificacion'],  
+            'marca' => $resultado,  
+        ]);  
 
     // Devolver la respuesta en formato JSON
     return response()->json(['estado' => $resultado]);
