@@ -8,7 +8,7 @@ class tbl_adm_marcaciones extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['idMarcacion', 'marca', 'hora', 'fecha'];
+    protected $fillable = ['idMarcacion','identificacion', 'marca', 'hora', 'fecha'];
 
     // Si la tabla no sigue la convención plural, puedes especificarla
     protected $table = 'tbl_adm_marcaciones';

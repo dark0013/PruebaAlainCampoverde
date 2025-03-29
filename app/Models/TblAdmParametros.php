@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory; 
 use Illuminate\Database\Eloquent\Model;
 
-class tbl_adm_parametros extends Model
+class TblAdmParametros extends Model
 {
     use HasFactory;
 

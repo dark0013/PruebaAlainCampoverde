@@ -14,6 +14,7 @@ return new class extends Migration
     {
         Schema::create('tbl_adm_marcaciones', function (Blueprint $table) {
             $table->id();
+            $table->string('identificacion');
             $table->string('marca');
             $table->time('hora')->default(Carbon::now()->format('H:i:s'));
             $table->date('fecha')->default(Carbon::now()->format('Y-m-d'));
