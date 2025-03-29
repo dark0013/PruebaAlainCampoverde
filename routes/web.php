@@ -8,4 +8,4 @@ Route::get('/', function () {
 
 
 /* Route::get('/marcaciones', [MarcacionController::class, 'index']);   */
-Route::post('marcaciones', [MarcacionController::class, 'index']);
+Route::post('marcaciones', [MarcacionController::class, 'fnMarcacion']);
